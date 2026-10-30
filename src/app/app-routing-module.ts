@@ -17,8 +17,8 @@ const routes: Routes = [
   {path: 'cine', component : CineComponent},
   {path: '', component : HomeComponent},
   {path: "pares", component: NumerosParesComponent},
+  {path: 'tabla', component : TablaMultiplicarComponent},
   {path: '**', component : NotFoundComponent},
-  {path: 'Tabla', component : TablaMultiplicarComponent}
 
 
 ];

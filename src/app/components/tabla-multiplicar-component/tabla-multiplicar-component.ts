@@ -7,7 +7,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   templateUrl: './tabla-multiplicar-component.html',
 })
 export class TablaMultiplicarComponent {
-  @ViewChild("cajaIntroducir") cajaIntroducir!: ElementRef;
+  @ViewChild("cajanumero") cajaNumero!: ElementRef;
   arrayNumeros!: number[];
 
   constructor (){
@@ -15,7 +15,7 @@ export class TablaMultiplicarComponent {
   }
 
   mostrarTabla(): void {
-    let numero = parseInt(this.cajaIntroducir.nativeElement.value);
+    let numero = parseInt(this.cajaNumero.nativeElement.value);
     for (let i = 1; i <= 10; i++) {
       this.arrayNumeros.push(numero * i);
 
