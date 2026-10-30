@@ -1,0 +1,28 @@
+<h1>Select números dobles</h1>
+<form>
+    <button (click)="generarNumero()">Generar número</button>
+    Seleccione un número
+    <select name="selectnumero" #selectnumero>
+        @for (num of arrayNumeros; track num){
+            <option>
+                {{num}}
+
+            </option>
+        }
+    </select>
+    <select name="selectnumero" #selectnumero>
+        <option>5</option>
+        <option>22</option> 
+        <option>45</option>
+        <option>26</option>
+        <option>77</option>
+    </select>
+    <button (click)="mostrarDoble()">Ver doble</button>
+</form>
+@if (doble != 0){
+    <h1 style="color: blueviolet;">
+        El doble es {{doble}}
+    </h1>
+
+}
+

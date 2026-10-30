@@ -6,4 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './cine-component.css',
   templateUrl: './cine-component.html',
 })
-export class CineComponent {}
+export class CineComponent {
+  
+
+}
