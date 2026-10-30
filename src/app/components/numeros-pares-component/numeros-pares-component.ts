@@ -8,8 +8,12 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class NumerosParesComponent {
   @ViewChild("cajainicio") cajainicio!: ElementRef;
-  @ViewChild("cajafinal") cajafin!: ElementRef;
+  @ViewChild("cajafin") cajafin!: ElementRef;
   arrayNumeros!: number[];
+
+  constructor(){
+    this.arrayNumeros = []
+  }
 
   mostrarPares(): void {
     //debemos recuperar el número de inicio de la caja y recuperamos el número de final de la caja

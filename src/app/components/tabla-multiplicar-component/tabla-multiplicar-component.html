@@ -1,0 +1,16 @@
+//crear una tabla de multiplicar
+<h1>Tabla multiplicar</h1>
+<form form="ngForm">
+
+    <input type="number" name="cajaLista" #cajalista/>
+    <button (click)="mostrarTabla()">
+        Ver tabla
+    </button>
+</form>
+<ul>
+    @for (num of arrayNumeros; track arrayNumeros){
+        <li>{{num}}</li>
+    }
+</ul>
+
+

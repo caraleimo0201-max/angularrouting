@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home-component/home-component';
 import { NotFoundComponent } from './components/not-found-component/not-found-component';
 import { MenuComponent } from './components/menu-component/menu-component';
 import { NumerosParesComponent } from './components/numeros-pares-component/numeros-pares-component';
+import { TablaMultiplicarComponent } from './components/tabla-multiplicar-component/tabla-multiplicar-component';
 
 
 
@@ -16,7 +17,9 @@ const routes: Routes = [
   {path: 'cine', component : CineComponent},
   {path: '', component : HomeComponent},
   {path: "pares", component: NumerosParesComponent},
-  {path: '**', component : NotFoundComponent}
+  {path: '**', component : NotFoundComponent},
+  {path: 'Tabla', component : TablaMultiplicarComponent}
+
 
 ];
 

@@ -1,1 +1,17 @@
-<p>numeros-pares-component works!</p>
+<h1>Numeros pares</h1>>
+<form form="ngForm">
+    Inicio:
+    <input type="number" name="cajainicio" #cajainicio/>
+    Fin:
+    <input type="number" name="cajafin" #cajafin/>
+    <button (click)="mostrarPares()">
+        Ver pares
+    </button>
+
+</form>
+<ul>
+    @for (num of arrayNumeros; track arrayNumeros){
+        <li>{{num}}</li>
+    }
+</ul>
+
