@@ -12,6 +12,7 @@ import { TablaMultiplicarComponent } from './components/tabla-multiplicar-compon
 import { NumerosParesComponent } from './components/numeros-pares-component/numeros-pares-component';
 import { FormselectNumerosDoblesComponent } from './components/formselect-numeros-dobles-component/formselect-numeros-dobles-component';
 import { NumeroDobleComponentComponent } from './components/numero-doble-component-component/numero-doble-component-component';
+import { AngularModelosComunicacionComponent } from './components/angular-modelos-comunicacion-component/angular-modelos-comunicacion-component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { NumeroDobleComponentComponent } from './components/numero-doble-compone
     TablaMultiplicarComponent,
     FormselectNumerosDoblesComponent,
     NumeroDobleComponentComponent,
+    AngularModelosComunicacionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
