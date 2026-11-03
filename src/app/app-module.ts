@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { TablaMultiplicarComponent } from './components/tabla-multiplicar-component/tabla-multiplicar-component';
 import { NumerosParesComponent } from './components/numeros-pares-component/numeros-pares-component';
 import { FormselectNumerosDoblesComponent } from './components/formselect-numeros-dobles-component/formselect-numeros-dobles-component';
+import { NumeroDobleComponentComponent } from './components/numero-doble-component-component/numero-doble-component-component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormselectNumerosDoblesComponent } from './components/formselect-numero
     NumerosParesComponent,
     TablaMultiplicarComponent,
     FormselectNumerosDoblesComponent,
+    NumeroDobleComponentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],

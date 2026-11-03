@@ -9,12 +9,15 @@ import { NumerosParesComponent } from './components/numeros-pares-component/nume
 
 import { TablaMultiplicarComponent } from './components/tabla-multiplicar-component/tabla-multiplicar-component';
 import { FormselectNumerosDoblesComponent } from './components/formselect-numeros-dobles-component/formselect-numeros-dobles-component';
+import {NumeroDobleComponentComponent} from './components/numero-doble-component-component/numero-doble-component-component';
 
 
 
 
 
 const routes: Routes = [
+  {path: 'doble', component: NumeroDobleComponentComponent}, //con params
+  {path: "doble/:numero", component: NumeroDobleComponentComponent,},//Sin params
   {path: 'musica', component: MusicaComponent },
   {path: 'cine', component : CineComponent},
   {path: '', component : HomeComponent},
